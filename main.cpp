@@ -28,6 +28,9 @@ public:
 
 int main()
 {
+    std::cout << "Size of Entity: " << sizeof(Entity) << " Bytes" << std::endl; // Outputting the size of Entity in bytes [8]
+    std::cout << "Size of Player: " << sizeof(Player) << " Bytes" << std::endl; // Outputting the size of Player in bytes [16] // char* is 8 bytes on 64-bit
+
     Player player;
     player.Name = "AchroDev"; // Setting the name of the player
     player.PrintName();       // Printing the name
