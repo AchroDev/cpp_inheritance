@@ -28,6 +28,11 @@ public:
 
 int main()
 {
-
+    Player player;
+    player.Name = "AchroDev"; // Setting the name of the player
+    player.PrintName();       // Printing the name
+    player.Move(5, 5);        // Example showing since the player is of type Entity as well, we have access to move
+    player.X = 2;             // We also have access to X
+    player.Y = 3;             // and Y
     std::cin.get();
 }
